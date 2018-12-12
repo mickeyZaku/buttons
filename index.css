@@ -6,6 +6,7 @@ div{
     margin: 20px auto;
     cursor: pointer;
 }
+/*渐变*/
 #button1{
     background: linear-gradient(60deg, #000 0, #000 59%, #000 60%, #bcbcbc 60%, #bcbcbc 100%);
     border-radius: 25px;
@@ -18,6 +19,7 @@ div{
 .wrapper{
     position: relative;
 }
+/*light*/
 #button2{
     margin-top: 0;
     overflow: hidden;
@@ -48,6 +50,7 @@ div{
     perspective: 1500px;
     margin-bottom: 0;
 }
+/*3d*/
 #button3 {
     transform-style: preserve-3d;
     transition: all 0.3s;
@@ -75,6 +78,7 @@ div{
     background: #fff;
     transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
+/*lux*/
 #button4 {
     margin-top: 50px;
     width: unset;
@@ -95,6 +99,7 @@ div{
     border: 1px solid rgba(223,190,106, 0);
     background-position: 90% 50%;
 }
+/*slide*/
 #button5 {
     background: transparent;
     position: relative;
@@ -133,6 +138,7 @@ div{
 .bt5-two:hover + span {
     color: #000;
 }
+/*border slide*/
 #button6 {
     background: none;
     border: none;
@@ -167,6 +173,7 @@ div{
 #button6:hover:before, #button6:hover:after {
     transform: none;
 }
+/*click*/
 #button7 .bt7 {
     display:inline-block;
     border:none;
@@ -189,6 +196,7 @@ div{
     padding-bottom:10px;
 
 }
+/*nets*/
 #button8 {
     background: #fff;
     color: #5b5b5b;
@@ -218,7 +226,54 @@ div{
     border-top: 1px solid #000;
     animation: stripe-slide 12s infinite linear forwards;
 }
-
+/*switch*/
+#button9 #switch {
+    display: none;
+}
+#button9 #switch + label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    transition: 0.3s;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+#button9 #switch + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#button9 #switch + label {
+    background: #ddd;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #aaa;
+}
+#button9 #switch + label:after {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #aaa;
+}
+/*todo 颜色控制*/
+/*#switch:checked + label.red {*/
+    /*background: #ECA9A7;*/
+/*}*/
+/*#switch:checked + label.red:after {*/
+    /*background: #D9534F;*/
+/*}*/
+#button9 #switch:checked + label {
+    background: #ECA9A7;
+}
+#button9 #switch:checked + label:after {
+    left: 20px;
+    background: #D9534F;
+}
 /*动画*/
 @-webkit-keyframes stripe-slide {
     0% {
