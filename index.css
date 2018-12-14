@@ -323,6 +323,29 @@ div{
     color: #7a7a7a;
     left: 160px;
 }
+/*☯太极*/
+#button11 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 15px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background:
+            radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+            radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+            radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+            radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+            radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+            radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+            radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+            radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+    background-color:#63773F;
+    background-size:100px 100px;
+    transition: 1s ease-in-out;
+}
+#button11:hover {
+    transform: rotate(360deg);
+}
 /*动画*/
 @-webkit-keyframes stripe-slide {
     0% {
