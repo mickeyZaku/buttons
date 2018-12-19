@@ -346,6 +346,41 @@ div{
 #button11:hover {
     transform: rotate(360deg);
 }
+/*太极2*/
+#button11_ {
+    width: 300px;
+    box-sizing: content-box;
+    height: 150px;
+    background: #eee;
+    border-color: #000;
+    border-style: solid;
+    border-width: 4px 4px 150px 4px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.6s ease-in-out;
+}
+#button11_:hover {
+    transform: rotate(360deg);
+}
+#button11_:before, #button11_:after{
+    position: absolute;
+    content: '';
+    top: 75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#button11_:before {
+    left: 0;
+    border: 60px solid #000;
+    background: #eee;
+}
+#button11_:after {
+    right: 0;
+    border: 60px solid #eee;
+    background: #000;
+}
 /*潮水*/
 #button12 {
     position: relative;
